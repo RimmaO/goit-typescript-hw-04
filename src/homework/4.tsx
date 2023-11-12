@@ -51,7 +51,7 @@ function MenuProvider({ children }: PropsProvider) {
   );
 }
 
-type PropsMenu = { menus: Menu };
+type PropsMenu = { menus: Menu[] };
 
 function MenuComponent({ menus }: PropsMenu) {
   const { onSelectedMenu } = useContext(MenuActionContext);
